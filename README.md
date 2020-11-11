@@ -1,1 +1,33 @@
-# bd_koboz_cert
+client
+dev tun
+float
+pull
+proto tcp-client
+remote 209.97.169.117 443
+cipher AES-128-CBC
+auth SHA256
+auth-user-pass
+reneg-sec 86400
+http-proxy 209.97.169.117 8080
+http-proxy-option VERSION 1.1
+http-proxy-option CUSTOM-HEADER Host m.instagram.com
+http-proxy-option CUSTOM-HEADER X-Online-Host m.instagram.com
+redirect-gateway def1
+verb 0
+setenv CLIENT_CERT 0
+<ca>
+-----BEGIN CERTIFICATE-----
+MIICNDCCAZ2gAwIBAgIUQstRl21hyC5lXz1c7jn7C6e8zN0wDQYJKoZIhvcNAQEL
+BQAwEDEOMAwGA1UEAwwFQkRWUE4wHhcNMTkwNTE5MTYwMjI1WhcNMjkwNTE2MTYw
+MjI1WjAQMQ4wDAYDVQQDDAVCRFZQTjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkC
+gYEAoWwOtlikltjuCetldodZLw2hfXJcac4n08tARwEevt39j52jTEqkrMfefGfb
+CbHJ+PLI9LTGIFJLdFVc/qWrTocmIPCb+czIAtJAHclpMNN7rBWKrhzMGU7Dv+1c
+ZBF6DbJz+d3EgjNLHsVbC3xcdiQabLKId8Ch5I7OG5lk7Y8CAwEAAaOBijCBhzAd
+BgNVHQ4EFgQU4S58uVpkREgHI4m4nPfjJdaSjtowSwYDVR0jBEQwQoAU4S58uVpk
+REgHI4m4nPfjJdaSjtqhFKQSMBAxDjAMBgNVBAMMBUJEVlBOghRCy1GXbWHILmVf
+PVzuOfsLp7zM3TAMBgNVHRMEBTADAQH/MAsGA1UdDwQEAwIBBjANBgkqhkiG9w0B
+AQsFAAOBgQCeI8cthGMNs+UqLic3tWAufX/z01abu2j33a4T8fcAwNU0P1KU/mTA
+Kjtf9UnQ9X6NM2bU2Q3/lB5IZft+M8Q34IpBDdvD17l+U0PIyVLTRpwB6Cf9Apop
++9r6hWopTd1/CE0/6l+rYn0tPUcZiU1UtnbHkGadXho4j1N71KHMfQ==
+-----END CERTIFICATE-----
+</ca>
